@@ -18,7 +18,9 @@ Primary color: #e67e22
 -Tints:
 -Shades:
 -Accents:
--Greys: #555
+-Greys: #555 #333
+
+www.maketintsandshades.com
 
 
 --- 03 IMAGES
@@ -64,9 +66,25 @@ body {
   margin: 0 auto;
   display: grid;
   grid-template-columns: 1fr 1fr;
-  background-color: #2e464e;
+  align-items: center;
+  background-color: #f8d8bd;
 }
 
 .home-img {
   width: 100%;
+}
+
+.heading-primary {
+  
+  font-size: 5.2rem;
+  font-weight: 700;
+  line-height: 1.05;
+  color: #333;
+  letter-spacing: -0.5px;
+  margin-bottom: 4.8rem ;
+}
+
+.home-description{
+  font-size: 2rem;
+  line-height: 1.6;
 }
