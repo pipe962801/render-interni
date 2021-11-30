@@ -42,10 +42,11 @@ Free faces - www.uifaces.co
 /*
 
 /*Universal selector, Global settings*/
-* {
+*, *:before, *:after {
   padding: 0;
   margin: 0;
   box-sizing: border-box;
+  background-color: red;
 }
 
 html {
