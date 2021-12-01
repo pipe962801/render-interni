@@ -63,6 +63,48 @@ body {
   color: #555;
 }
 
+/******HEADER*****/
+
+header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 22rem;
+  padding: 0 6rem;
+}
+
+.logo {
+  height: 18rem;
+}
+
+/******NAVIGATION*****/
+
+.main-nav-list {
+  list-style: none;
+  display: flex;
+  align-items: center;
+  gap: 8rem;
+  cursor: pointer;
+}
+
+.main-nav-link:link,
+.main-nav-link:visited {
+  display: inline-block;
+  text-decoration: none;
+  color: #333;
+  font-weight: 500;
+  font-size: 1.8rem;
+  transition: all 0.3s;
+}
+
+.main-nav-link:hover,
+.main-nav-link:active {
+  color: #cf711f;
+}
+
+
+/******HERO SECTION*****/
+
 .section-welcome {
   background-color: #fae5d3;
   padding: 9.6rem 0;
