@@ -14,11 +14,12 @@ Default: 1
 
 --- 02 COLORS
 
-Primary color: #e67e22
--Tints: #fae5d3
--Shades:
--Accents:
--Greys: #555 #333
+Primary color: #11252d 
+-Tints: #415157, #889296
+-Shades:  #0e1e24, #ac624e
+-Accents: #D77A61
+-Greys: #555 #0e1e24
+-Typography: #B9D2EE
 
 www.maketintsandshades.com
 
@@ -57,24 +58,26 @@ html {
 }
 
 body {
-  font-family: sans-serif;
+  font-family: "Inter", sans-serif;
   line-height: 1;
   font-weight: 400;
-  color: #555;
+  color: #0e1e24;
 }
 
 /******HEADER*****/
 
-header {
+.header {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  height: 22rem;
+  height: 12rem;
   padding: 0 6rem;
+  position: relative;
+  background-color: rgba(255, 255, 255, 0);
 }
 
 .logo {
-  height: 18rem;
+  height: 15rem;
 }
 
 /******NAVIGATION*****/
@@ -91,31 +94,42 @@ header {
 .main-nav-link:visited {
   display: inline-block;
   text-decoration: none;
-  color: #333;
-  font-weight: 500;
-  font-size: 1.8rem;
+  color: #0e1e24;
+  font-weight: 400;
+  font-size: 1.6rem;
   transition: all 0.3s;
 }
 
 .main-nav-link:hover,
 .main-nav-link:active {
-  color: #cf711f;
+  color: #d77a61;
 }
 
+/******STICKY NAVIGATION*****/
+
+.sticky {
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  width: 100%;
+  z-index: 999;
+  padding-top: 0;
+  padding-bottom: 0;
+}
 
 /******HERO SECTION*****/
 
-.section-welcome {
-  background-color: #fae5d3;
-  padding: 9.6rem 0;
+.section-hero {
+  background-image: linear-gradient(90deg, #11252d 60%, #fff 40%);
+  padding: 15rem 0 10rem 0;
 }
 
-.home {
-  max-width: 130rem;
+.hero {
+  max-width: 132rem;
   margin: 0 auto;
   display: grid;
   grid-template-columns: 1fr 1fr;
-  gap: 9.6rem;
+  gap: 9rem;
   align-items: center;
 }
 
@@ -123,22 +137,23 @@ header {
   font-size: 5.2rem;
   font-weight: 700;
   line-height: 1.05;
-  color: #333;
+  color: #b9d2ee;
   letter-spacing: -0.5px;
   margin-bottom: 3.2rem;
 }
 
-.home-description {
+.hero-description {
   font-size: 2rem;
   line-height: 1.6;
   margin-bottom: 4.8rem;
+  color: #b9d2ee;
 }
 
 .btn:link,
 .btn:visited {
   display: inline-block;
-  background-color: #e67e22;
-  color: #fff;
+  background-color: #d77a61;
+  color: #b9d2ee;
   text-decoration: none;
   font-size: 2rem;
   padding: 1.6rem 3.2rem;
@@ -148,13 +163,13 @@ header {
 
 .btn--full:link,
 .btn--full:visited {
-  background-color: #e67e22;
+  background-color: #d77a61;
   color: #fff;
 }
 
 .btn--full:hover,
 .btn--full:active {
-  background-color: #cf711f;
+  background-color: #df9581;
   color: #fff;
 }
 
@@ -165,6 +180,6 @@ box-shadow: inset 0 0 0 3px #fff */
   margin-right:1.6rem !important;
 } trick for adding space */
 
-.home-img {
+.hero-img {
   width: 100%;
 }
