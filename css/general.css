@@ -1,3 +1,171 @@
+/* DESIGN PREMISES
+
+--- 01 TYPOGRAPHY
+
+-Font sizes (px)
+ 10 / 12 / 14 / 16 / 18 / 20 / 24 / 30 / 36 / 44 / 52 / 62 / 74 / 86 / 98
+
+-Font weights
+Default: 400
+
+-Line heights
+Default: 1
+
+
+--- 02 COLORS
+
+Primary color: #11252d 
+-Tints: #415157, #889296
+-Shades:  #0e1e24, #ac624e
+-Accents: #D77A61
+-Greys: #555 #0e1e24
+-Typography: #B9D2EE
+
+www.maketintsandshades.com
+
+
+--- 03 IMAGES
+
+Free images - www.unsplash.com
+Free faces - www.uifaces.co
+
+
+--- 05 SHADOWS
+
+--- 06 BORDER-RADIUS
+
+--- 07 WHITESPACE
+
+-Spacing system
+ 2 / 4 / 8 / 12 / 16 / 24 / 32 / 48 / 64 / 80 / 96 / 128
+ 
+
+/*
+
+/******NAVIGATION*****/
+
+.main-nav-list {
+  list-style: none;
+  display: flex;
+  align-items: center;
+  gap: 8rem;
+  cursor: pointer;
+}
+
+.main-nav-link:link,
+.main-nav-link:visited {
+  display: inline-block;
+  text-decoration: none;
+  color: #0e1e24;
+  font-weight: 400;
+  font-size: 1.6rem;
+  transition: all 0.3s;
+}
+
+.main-nav-link:hover,
+.main-nav-link:active {
+  color: #d77a61;
+}
+
+/******STICKY NAVIGATION*****/
+
+.sticky {
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  width: 100%;
+  z-index: 999;
+  padding-top: 0;
+  padding-bottom: 0;
+}
+
+
+
+/******FOOTER*****/
+
+.footer {
+  padding: 4rem 0 2rem 0;
+  background-color: #11252d;
+}
+
+.grid--footer {
+  grid-template-columns: 1.5fr 1fr 1fr 1fr;
+}
+
+.logo-col {
+  display: flex;
+  flex-direction: column;
+}
+
+.footer-logo {
+  display: block;
+  margin-bottom: 3.2rem;
+}
+
+.logo-footer {
+  height: 16rem;
+}
+
+.social-links {
+  list-style: none;
+  display: flex;
+  gap: 2.4rem;
+}
+
+.social-icon {
+  height: 2.4rem;
+  width: 2.4rem;
+}
+
+.copyright {
+  font-size: 1.4rem;
+  line-height: 1.6;
+  color: #fff;
+  margin-top: auto;
+}
+
+.footer-heading {
+  font-size: 1.8rem;
+  font-weight: 500;
+  margin-bottom: 4rem;
+  color: #fff;
+}
+
+.contacts {
+  font-style: normal;
+  font-size: 1.6rem;
+  line-height:2.5;
+}
+
+.footer-nav {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 2.4rem;
+}
+
+.footer-link:link,
+.footer-link:visited {
+  text-decoration: none;
+  font-size: 1.6rem;
+  color: #b9d2ee;
+  transition: all 0.3s;
+  
+}
+
+.footer-link:hover,
+.footer-link:active {
+  color: #d77a61;
+}
+
+
+.footer-link{
+  line-height: 2rem;
+}
+
+
+/******LAYOUT*****/
+
 .container {
   /* 1140px */
   max-width: 120rem;
