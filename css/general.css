@@ -79,8 +79,6 @@ Free faces - www.uifaces.co
   padding-bottom: 0;
 }
 
-
-
 /******FOOTER*****/
 
 .footer {
@@ -134,7 +132,7 @@ Free faces - www.uifaces.co
 .contacts {
   font-style: normal;
   font-size: 1.6rem;
-  line-height:2.5;
+  line-height: 2.5;
 }
 
 .footer-nav {
@@ -150,7 +148,6 @@ Free faces - www.uifaces.co
   font-size: 1.6rem;
   color: #b9d2ee;
   transition: all 0.3s;
-  
 }
 
 .footer-link:hover,
@@ -158,11 +155,9 @@ Free faces - www.uifaces.co
   color: #d77a61;
 }
 
-
-.footer-link{
+.footer-link {
   line-height: 2rem;
 }
-
 
 /******LAYOUT*****/
 
@@ -174,7 +169,7 @@ Free faces - www.uifaces.co
 }
 
 .grid {
-    display: grid;
-    column-gap: 6.4rem;
-    row-gap: 9.6rem;
+  display: grid;
+  column-gap: 6.4rem;
+  row-gap: 9.6rem;
 }
