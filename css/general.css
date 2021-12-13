@@ -166,10 +166,28 @@ Free faces - www.uifaces.co
   max-width: 120rem;
   padding: 0 3.2rem;
   margin: 0 auto;
+
 }
 
+/* reusable grid */
 .grid {
   display: grid;
   column-gap: 6.4rem;
   row-gap: 9.6rem;
+}
+
+.grid--2columns {
+  grid-template-columns: repeat(2, 1fr);
+}
+.grid--3columns {
+  grid-template-columns: repeat(3, 1fr);
+}
+.grid--4columns {
+  grid-template-columns: repeat(4, 1fr);
+}
+
+
+/* Center text */
+.text-center{
+  text-align: center;
 }

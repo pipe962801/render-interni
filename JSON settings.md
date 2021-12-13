@@ -20,6 +20,7 @@
 
 //Key bindings.JSON
 
+// Place your key bindings in this file to override the defaultsauto[]
 [
   {
     "key": "ctrl+space",
@@ -42,6 +43,15 @@
     "args": {
       "snippet": "console.log(${TM_SELECTED_TEXT}$1)$2;"
     }
-  }
+  },
 
+  {
+    "key": "alt+d", // whatever keybinding you want
+    "command": "editor.action.insertSnippet",
+    "args": {
+      "snippet": "<div class=\"${1:type_here}\">${TM_SELECTED_TEXT}</div>$0"
+    },
+    "when": "editorTextFocus && editorHasSelection && editorLangId == html",
+    "name": "wrap with div"
+  }
 ]
