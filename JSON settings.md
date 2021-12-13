@@ -16,3 +16,32 @@
       },
       "diffEditor.ignoreTrimWhitespace": false
 }
+
+
+//Key bindings.JSON
+
+[
+  {
+    "key": "ctrl+space",
+    "command": "cursorLineEnd"
+  },
+  {
+    "key": "ctrl+space",
+    "command": "-editor.action.triggerSuggest",
+    "when": "editorHasCompletionItemProvider && textInputFocus && !editorReadonly"
+  },
+  {
+    "key": "ctrl+space",
+    "command": "-toggleSuggestionDetails",
+    "when": "suggestWidgetVisible && textInputFocus"
+  },
+  {
+    "key": "ctrl+alt+l",
+    "command": "editor.action.insertSnippet",
+    "when": "editorTextFocus",
+    "args": {
+      "snippet": "console.log(${TM_SELECTED_TEXT}$1)$2;"
+    }
+  }
+
+]
