@@ -171,6 +171,8 @@ Free faces - www.uifaces.co
 /* reusable grid */
 .grid {
   display: grid;
+  column-gap: 6.4rem;
+  row-gap: 9.6rem;
 }
 
 .grid--2columns {
@@ -194,10 +196,4 @@ Free faces - www.uifaces.co
   width: 100%;
   max-height: 100%;
   overflow: hidden;
-}
-
-.flex{
-  display: flex;
-  justify-content: center;
-  align-items: flex-end;
 }
