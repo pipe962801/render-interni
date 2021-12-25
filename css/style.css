@@ -163,19 +163,19 @@ box-shadow: inset 0 0 0 3px #fff */
 /******RENDER SHOWCASE*****/
 
 .card-modellazione-3d {
-  background: url("images/render-showcase/modellazione-3d.jpg") no-repeat;
+  background: url("../images/render-showcase/modellazione-3d.jpg") no-repeat;
   background-size: cover;
   
 }
 
 .card-rendering-interni {
-  background: url("images/render-showcase/rendering-interni.jpg") no-repeat;
+  background: url("/images/render-showcase/rendering-interni.jpg") no-repeat;
   background-size: cover;
   
 }
 
 .card-fotoinserimenti-interni {
-  background: url("images/render-showcase/fotoinserimento-interni.jpg")
+  background: url("/images/render-showcase/fotoinserimento-interni.jpg")
     no-repeat;
   background-size: cover;
   
